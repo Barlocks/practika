@@ -6,6 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+
   color: #1a1a1a;
   background: #fff;
   overflow-x: hidden;
@@ -230,25 +231,25 @@ body {
   font-weight: 700;
 }
 
-.skills__row {
+.skills__top {
   display: flex;
-  gap: 24px;
-  margin-bottom: 30px;
+  gap: 30px;
+  margin-bottom: 24px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-.skills__card {
+.skills__col {
   flex: 1;
-  padding: 24px;
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 .skills__block {
   margin-bottom: 24px;
   padding: 28px 30px;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
@@ -351,21 +352,16 @@ body {
 }
 
 .projects__logo {
-  flex: 0 0 140px;
+  flex: 0 0 160px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #0d3b2e;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1;
 }
 
-.projects__logo span {
-  margin-top: 6px;
-  font-size: 11px;
-  letter-spacing: 1px;
+.projects__logo img {
+  max-width: 140px;
+  height: auto;
+  display: block;
 }
 
 .projects__task {
@@ -471,12 +467,12 @@ body {
     font-size: 22px;
   }
 
-  .skills__row {
+  .skills__top {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    padding: 20px;
   }
 
-  .skills__card,
   .skills__block {
     padding: 20px;
   }
@@ -523,6 +519,9 @@ body {
 
   .projects__logo {
     flex: none;
-    font-size: 32px;
+  }
+
+  .projects__logo img {
+    max-width: 120px;
   }
 }
