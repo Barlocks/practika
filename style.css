@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 40px;
+  background: #0d3b2e;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav__logo {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav__btn {
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.nav__btn:hover {
+  opacity: 0.85;
+}
+
+/* hero */
+.hero {
+  padding: 80px 40px 70px;
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.hero__text {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero__btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 30px;
+  background: #0d3b2e;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero__btn:hover {
+  opacity: 0.9;
+}
+
+.hero__note {
+  max-width: 420px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* marketing */
+.marketing {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.marketing__title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.marketing__grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.marketing__card {
+  width: 300px;
+  padding: 28px 22px 22px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.marketing__list {
+  margin-bottom: 25px;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.marketing__list li {
+  margin-bottom: 8px;
+}
+
+.marketing__btn {
+  display: block;
+  width: 130px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: none;
+  border-radius: 25px;
+  background: #0d3b2e;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.marketing__btn:hover {
+  opacity: 0.9;
+}
+
+/* why-marketing */
+.why-marketing {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.why-marketing__title {
+  margin-bottom: 35px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.why-marketing__text {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.why-marketing__text p {
+  margin-bottom: 18px;
+}
+
+/* form */
+.form {
+  padding: 60px 40px 70px;
+  text-align: center;
+}
+
+.form__title {
+  margin-bottom: 35px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form__input {
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.form__btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  opacity: 0.9;
+}
+
+/* skills */
+.skills {
+  padding: 60px 40px;
+}
+
+.skills__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.skills__row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.skills__card {
+  flex: 1;
+  padding: 24px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.skills__block {
+  margin-bottom: 24px;
+  padding: 28px 30px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.skills__name {
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.skills__list {
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.skills__list li {
+  margin-bottom: 6px;
+}
+
+/* advantages */
+.advantages {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.advantages__title {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.advantages__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 50px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.advantages__item {
+  width: 360px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* who */
+.who {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.who__title {
+  margin-bottom: 35px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.who__grid {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.who__list {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 20px;
+}
+
+/* projects */
+.projects {
+  padding: 60px 40px 90px;
+}
+
+.projects__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.projects__card {
+  display: flex;
+  gap: 35px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+}
+
+.projects__logo {
+  flex: 0 0 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0d3b2e;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.projects__logo span {
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.projects__task {
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.projects__result {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .nav {
+    height: auto;
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .nav__logo {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .nav__mail,
+  .nav__phone {
+    width: 48%;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .nav__btn {
+    width: 100%;
+    padding: 9px 0;
+  }
+
+  .hero {
+    padding: 50px 16px 45px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+  }
+
+  .marketing {
+    padding: 40px 16px;
+  }
+
+  .marketing__title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .marketing__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .marketing__card {
+    width: 100%;
+  }
+
+  .why-marketing {
+    padding: 40px 16px;
+  }
+
+  .why-marketing__title {
+    font-size: 22px;
+  }
+
+  .why-marketing__text {
+    font-size: 14px;
+  }
+
+  .form {
+    padding: 40px 16px 50px;
+  }
+
+  .form__title {
+    font-size: 20px;
+  }
+
+  .form__body {
+    max-width: 100%;
+  }
+
+  .skills {
+    padding: 40px 16px;
+  }
+
+  .skills__title {
+    font-size: 22px;
+  }
+
+  .skills__row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .skills__card,
+  .skills__block {
+    padding: 20px;
+  }
+
+  .advantages {
+    padding: 40px 16px;
+  }
+
+  .advantages__title {
+    font-size: 20px;
+  }
+
+  .advantages__item {
+    width: 100%;
+  }
+
+  .who {
+    padding: 40px 16px;
+  }
+
+  .who__title {
+    font-size: 20px;
+  }
+
+  .who__grid {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .projects {
+    padding: 40px 16px 60px;
+  }
+
+  .projects__title {
+    font-size: 22px;
+  }
+
+  .projects__card {
+    flex-direction: column;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .projects__logo {
+    flex: none;
+    font-size: 32px;
+  }
+}
